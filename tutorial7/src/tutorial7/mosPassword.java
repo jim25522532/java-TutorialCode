@@ -8,38 +8,51 @@ public class mosPassword {
 		// TODO Auto-generated method stub
 		
 		Scanner sc = new Scanner(System.in);
+
 		int total = sc.nextInt();
-		String text[] = new  String[total];
+		String text[] = new  String[total]; //total要大於1
 		for(int i=0;i<total;i++) {
-			text[i] = sc.nextLine();
-			System.out.println(text[i]);
+			text[i] = sc.nextLine();; //輸入到字串中切勿使用nextLine		
 		}
 
-		for(int i=0;i<text.length;i++)
+//		System.out.println(text.length); //total = 5 輸出5
+		for(int i=1;i<text.length;i++)
 		{
-			String[] textSplit = text[i].split(" ");
-			System.out.println(text[i]+"i");
+			String[] textSplit = text[i].split(" "); //空白分隔
+			System.out.print("\n");
 			for(int j=0;j<textSplit.length;j++) {
-				System.out.println(textSplit[j]);
+
+//				System.out.println("textSplit"+textSplit[j]);
 				switch(textSplit[j]){
-					case ".-":System.out.println("A");break;
-					case "-...":System.out.println("B");break;
-					case "-.-.":System.out.println("C");break;
-					case "-..":System.out.println("D");break;
-					case ".":System.out.println("E");break;
-					case "..-.":System.out.println("F");break;
-					case "--.":System.out.println("G");break;
-					case "....":System.out.println("H");break;
-					case "..":System.out.println("I");break;
-					case ".---":System.out.println("J");break;
-					case "-.-":System.out.println("K");break;
-					case "...":System.out.println("S");break;
-					case "---":System.out.println("O");break;
-				/**
-				 * 剩下的要怎麼做?
-				 * 請試著做看看
-				 */
+					case ".-":System.out.print("A");break;
+					case "-...":System.out.print("B");break;
+					case "-.-.":System.out.print("C");break;
+					case "-..":System.out.print("D");break;
+					case ".":System.out.print("E");break;
+					case "..-.":System.out.print("F");break;
+					case "--.":System.out.print("G");break;
+					case "....":System.out.print("H");break;
+					case "..":System.out.print("I");break;
+					case ".---":System.out.print("J");break;
+					case "-.-":System.out.print("K");break;
+					case ".-..":System.out.print("L");break;
+					case "--":System.out.print("M");break;
+					case "-.":System.out.print("N");break;
+					case "---":System.out.print("O");break;
+					case ".--.":System.out.print("P");break;
+					case "--.-":System.out.print("Q");break;
+					case ".-.":System.out.print("R");break;
+					case "...":System.out.print("S");break;
+					case "-":System.out.print("T");break;
+					case "..-":System.out.print("U");break;
+					case "...-":System.out.print("V");break;
+					case ".--":System.out.print("W");break;
+					case "-..-":System.out.print("X");break;
+					case "-.--":System.out.print("Y");break;
+					case "--..":System.out.print("Z");break;
+		
 				}
+
 			}
 		}
 	}
