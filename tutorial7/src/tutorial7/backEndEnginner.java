@@ -6,6 +6,11 @@ public class backEndEnginner extends Employee{
 	      super(name, address, number);
 	      setJob(job);
 	   }
+	
+	public static void main(String[] args) {
+		
+	
+	}
 	public void doJob() {
 		System.out.println("後端工程師");
 	}

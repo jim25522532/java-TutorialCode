@@ -23,7 +23,10 @@ public class Employee {
 	   }
 	   public static void main(String[] args) {
 		   Employee boss = new Employee("001","台北市",100);
-		   System.out.println(boss);
+		   backEndEnginner sr = new backEndEnginner("001","台北市",100,"工程師");
+		   boss = sr;
+		   System.out.println(boss.getClass());
+		  
 	   }
 	   public void mailCheck() {
 	      System.out.println("郵件確認 " + this.name + " " + this.address);

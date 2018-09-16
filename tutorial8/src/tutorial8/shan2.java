@@ -14,12 +14,14 @@ public class shan2 {
 		//高度不同旋轉後會變成寬度>高度不能由arr陣列去接受此回傳值
 		Scanner input = new Scanner(System.in);
 		
+		//列:高
 		int row = input.nextInt(); //高
+		//欄:寬
 		int col = input.nextInt();//欄
 		
 		
 		int [][] arr= new int[row][col]; //原矩陣
-		
+//		int [][] arr2= new int[col][row]; //原矩陣
 		/**
 		 * 輸入矩陣內的數值
 		 */
@@ -30,13 +32,13 @@ public class shan2 {
 				 arr[i][j] = input.nextInt();  
              }  
 		 }
-		 shan(arr,row,col);
-//		 for(int i=0;i<col;i++){  
-//             for(int j=0;j<row;j++){  
-//            	 System.out.print(" "+arr[j][i]); //讓每個矩陣中+一個空白
-//             }  
-//             System.out.println();  
-//         }  
+//		 shan(arr,row,col);
+		 for(int i=0;i<col;i++){  
+             for(int j=0;j<row;j++){  
+            	 System.out.print(" "+arr[j][i]); //讓每個矩陣中+一個空白
+             }  
+             System.out.println();  
+         }  
 		
 		
 	}

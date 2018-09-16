@@ -12,12 +12,17 @@ public class mosPassword {
 		int total = sc.nextInt();
 		String text[] = new  String[total]; //total要大於1
 		for(int i=0;i<total;i++) {
+			//每列輸入一組字串
 			text[i] = sc.nextLine();; //輸入到字串中切勿使用nextLine		
 		}
 
 //		System.out.println(text.length); //total = 5 輸出5
+		
+		//5列 把text陣列長度找出
+		//幾列 做幾次
 		for(int i=1;i<text.length;i++)
 		{
+			//分割字串 空白字元
 			String[] textSplit = text[i].split(" "); //空白分隔
 			System.out.print("\n");
 			for(int j=0;j<textSplit.length;j++) {
